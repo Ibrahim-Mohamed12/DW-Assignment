@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="(localdb)_MSSQLLocalDB.dbhouse"
+  DTS:DTSID="{05DBC31D-C9E5-4690-8432-C59B04799C14}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Staging;Provider=MSOLEDBSQL.1;Persist Security Info=False;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Staging-{05DBC31D-C9E5-4690-8432-C59B04799C14}(localdb)\MSSQLLocalDB.dbhouse;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
