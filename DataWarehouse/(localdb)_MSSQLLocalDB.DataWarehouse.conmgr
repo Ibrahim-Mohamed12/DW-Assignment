@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="(localdb)_MSSQLLocalDB.DataWarehouse"
+  DTS:DTSID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DataWarehouse;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-DataWarehouse-{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}(localdb)\MSSQLLocalDB.DataWarehouse;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
