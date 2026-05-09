@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="34"
-  DTS:VersionGUID="{47FF5E07-35C8-4E63-A144-E5FFD113BB2D}">
+  DTS:VersionBuild="37"
+  DTS:VersionGUID="{CEF2F5B5-4818-4CC8-9EBC-447BE94B74FF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -43,7 +43,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="LoadDate">
       <DTS:VariableValue
-        DTS:DataType="7">5/9/2026 12:44:25 AM</DTS:VariableValue>
+        DTS:DataType="7">5/9/2026 1:27:09 PM</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -131,8 +131,8 @@ where [refTable].[customer_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimCustomer\Determine if new or existing.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -200,22 +200,6 @@ where [refTable].[customer_id] = ?</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DimCustomer\Determine if new or existing.Outputs[Lookup Match Output].Columns[lkp_contact_email]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Copy Column"
-                      length="200"
-                      lineageId="Package\DimCustomer\Determine if new or existing.Outputs[Lookup Match Output].Columns[lkp_contact_email]"
-                      name="lkp_contact_email"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">contact_email</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\DimCustomer\Determine if new or existing.Outputs[Lookup Match Output].Columns[lkp_industry]"
                       codePage="1252"
                       dataType="str"
@@ -229,6 +213,22 @@ where [refTable].[customer_id] = ?</property>
                           dataType="System.String"
                           description="Specifies the column in the reference table from which a column is copied."
                           name="CopyFromReferenceColumn">industry</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DimCustomer\Determine if new or existing.Outputs[Lookup Match Output].Columns[lkp_contact_email]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="200"
+                      lineageId="Package\DimCustomer\Determine if new or existing.Outputs[Lookup Match Output].Columns[lkp_contact_email]"
+                      name="lkp_contact_email"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">contact_email</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -449,8 +449,8 @@ where [refTable].[customer_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimCustomer\OLE DB Command.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -660,8 +660,8 @@ where [refTable].[customer_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimCustomer\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -825,8 +825,8 @@ where [refTable].[customer_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimCustomer\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{6743F638-1C1F-4585-89F9-89B7E0E8E827}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.Staging]"
+                  connectionManagerID="{557EC769-B79B-43C7-9B01-05CD823DFA44}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.Staging]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2204,8 +2204,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\DimDate\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2406,8 +2406,8 @@ where [refTable].[full_date] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimDate\Remove pre-existing dates.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -2929,8 +2929,8 @@ where [refTable].[department_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimDepartment\Determine new or existing.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -3107,8 +3107,8 @@ where [refTable].[department_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimDepartment\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3282,8 +3282,8 @@ where [refTable].[department_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimDepartment\OLE DB Destination 1.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3449,8 +3449,8 @@ where [refTable].[department_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimDepartment\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{6743F638-1C1F-4585-89F9-89B7E0E8E827}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.Staging]"
+                  connectionManagerID="{557EC769-B79B-43C7-9B01-05CD823DFA44}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.Staging]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3582,8 +3582,8 @@ WHERE department_sk = ?</property>
               <connections>
                 <connection
                   refId="Package\DimDepartment\Update type 2 column.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3928,8 +3928,8 @@ where [refTable].[employee_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimEmployee\Determine new or existing.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -4161,8 +4161,8 @@ where [refTable].[department_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimEmployee\Get department surrogate key.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -4308,8 +4308,8 @@ where [refTable].[department_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimEmployee\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4479,8 +4479,8 @@ where [refTable].[department_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimEmployee\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{6743F638-1C1F-4585-89F9-89B7E0E8E827}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.Staging]"
+                  connectionManagerID="{557EC769-B79B-43C7-9B01-05CD823DFA44}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.Staging]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4669,8 +4669,8 @@ where [refTable].[department_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimEmployee\Update type 1 columns.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5085,8 +5085,8 @@ where [refTable].[product_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimProduct\Determine new or existing products.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -5261,8 +5261,8 @@ where [refTable].[product_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimProduct\OLE DB Command.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5468,8 +5468,8 @@ where [refTable].[product_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimProduct\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5629,8 +5629,8 @@ where [refTable].[product_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimProduct\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{6743F638-1C1F-4585-89F9-89B7E0E8E827}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.Staging]"
+                  connectionManagerID="{557EC769-B79B-43C7-9B01-05CD823DFA44}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.Staging]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6126,8 +6126,8 @@ where [refTable].[supplier_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimSupplier\Determine new or existing.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -6474,8 +6474,8 @@ where [refTable].[supplier_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimSupplier\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6663,8 +6663,8 @@ where [refTable].[supplier_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimSupplier\OLE DB Destination 1.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6844,8 +6844,8 @@ where [refTable].[supplier_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\DimSupplier\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{6743F638-1C1F-4585-89F9-89B7E0E8E827}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.Staging]"
+                  connectionManagerID="{557EC769-B79B-43C7-9B01-05CD823DFA44}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.Staging]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -7001,8 +7001,8 @@ WHERE supplier_sk = ?</property>
               <connections>
                 <connection
                   refId="Package\DimSupplier\Update type 1 and 2 columns.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -7115,8 +7115,8 @@ WHERE supplier_sk = ?</property>
               <connections>
                 <connection
                   refId="Package\DimSupplier\Update type 1 column.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -7407,8 +7407,8 @@ where [refTable].[project_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\FactProjectHR\Determine if new or existing.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -7564,8 +7564,8 @@ where [refTable].[department_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\FactProjectHR\Get department surrogate key.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -7722,8 +7722,8 @@ where [refTable].[employee_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\FactProjectHR\Get employee surrogate key.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -7880,8 +7880,8 @@ where [refTable].[full_date] = ?</property>
               <connections>
                 <connection
                   refId="Package\FactProjectHR\Get surrogate key of end date.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -8037,8 +8037,8 @@ where [refTable].[full_date] = ?</property>
               <connections>
                 <connection
                   refId="Package\FactProjectHR\Get surrogate key of start date.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -8184,8 +8184,8 @@ where [refTable].[full_date] = ?</property>
               <connections>
                 <connection
                   refId="Package\FactProjectHR\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -8377,8 +8377,8 @@ GROUP BY p.project_id, p.department_id, p.start_date, p.end_date, p.budget</prop
               <connections>
                 <connection
                   refId="Package\FactProjectHR\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{6743F638-1C1F-4585-89F9-89B7E0E8E827}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.Staging]"
+                  connectionManagerID="{557EC769-B79B-43C7-9B01-05CD823DFA44}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.Staging]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -8960,8 +8960,8 @@ GROUP BY p.project_id, p.department_id, p.start_date, p.end_date, p.budget</prop
               <connections>
                 <connection
                   refId="Package\FactProjectHR\Update existing.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -9244,8 +9244,8 @@ where [refTable].[customer_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\FactSales\Get customer surrogate key.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -9402,8 +9402,8 @@ where [refTable].[full_date] = ?</property>
               <connections>
                 <connection
                   refId="Package\FactSales\Get date surrogate key.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -9560,8 +9560,8 @@ where [refTable].[product_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\FactSales\Get product surrogate key.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -9707,8 +9707,8 @@ where [refTable].[product_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\FactSales\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -9901,8 +9901,8 @@ JOIN products p ON s.product_id = p.product_id</property>
               <connections>
                 <connection
                   refId="Package\FactSales\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{6743F638-1C1F-4585-89F9-89B7E0E8E827}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.Staging]"
+                  connectionManagerID="{557EC769-B79B-43C7-9B01-05CD823DFA44}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.Staging]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -10170,8 +10170,8 @@ where [refTable].[sale_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\FactSales\Remove existing rows.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -10356,8 +10356,8 @@ where [refTable].[full_date] = ?</property>
               <connections>
                 <connection
                   refId="Package\FactSupplyChain\Get date surrogate key.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -10514,8 +10514,8 @@ where [refTable].[product_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\FactSupplyChain\Get product surrogate key.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -10672,8 +10672,8 @@ where [refTable].[supplier_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\FactSupplyChain\Get supplier surrogate key.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -10819,8 +10819,8 @@ where [refTable].[supplier_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\FactSupplyChain\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -10968,8 +10968,8 @@ where [refTable].[supplier_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\FactSupplyChain\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{6743F638-1C1F-4585-89F9-89B7E0E8E827}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.Staging]"
+                  connectionManagerID="{557EC769-B79B-43C7-9B01-05CD823DFA44}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.Staging]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -11165,8 +11165,8 @@ where [refTable].[supply_chain_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\FactSupplyChain\Remove existing rows.Connections[OleDbConnection]"
-                  connectionManagerID="{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.DataWarehouse]"
+                  connectionManagerID="{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.DataWarehouse]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -11575,13 +11575,13 @@ where [refTable].[supply_chain_id] = ?</property>
           Id="Package\DimCustomer\OLE DB Source"
           TopLeft="267,71" />
         <NodeLayout
-          Size="214,42"
-          Id="Package\DimCustomer\Determine if new or existing"
-          TopLeft="282,168" />
-        <NodeLayout
           Size="173,42"
           Id="Package\DimCustomer\OLE DB Command"
           TopLeft="422,424" />
+        <NodeLayout
+          Size="214,42"
+          Id="Package\DimCustomer\Determine if new or existing"
+          TopLeft="282,168" />
         <NodeLayout
           Size="204,42"
           Id="Package\DimCustomer\Determine if row changed"
@@ -11654,7 +11654,7 @@ where [refTable].[supply_chain_id] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-8.85805338541666,48.6808905380334,96.3827734375,11.609375"
+              BoundingBox="-8.85805338541665,48.6808905380334,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -11728,6 +11728,29 @@ where [refTable].[supply_chain_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\DimCustomer\Determine if new or existing">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\DimCustomer\OLE DB Destination">
     <Properties>
       <Property>
@@ -11740,46 +11763,23 @@ where [refTable].[supply_chain_id] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DimCustomer\Determine if new or existing">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\DimDate">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="177,42"
-          Id="Package\DimDate\OLE DB Destination"
-          TopLeft="263,319" />
+          Size="210,42"
+          Id="Package\DimDate\Remove pre-existing dates"
+          TopLeft="251,199" />
         <NodeLayout
           Size="155,42"
           Id="Package\DimDate\Generate dates"
           TopLeft="273,94" />
         <NodeLayout
-          Size="210,42"
-          Id="Package\DimDate\Remove pre-existing dates"
-          TopLeft="251,199" />
+          Size="177,42"
+          Id="Package\DimDate\OLE DB Destination"
+          TopLeft="263,319" />
         <EdgeLayout
           Id="Package\DimDate.Paths[Output 0]"
           TopLeft="353.25,136">
@@ -11830,6 +11830,29 @@ where [refTable].[supply_chain_id] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\DimDate\Remove pre-existing dates">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\DimDate\OLE DB Destination">
     <Properties>
       <Property>
@@ -11842,66 +11865,43 @@ where [refTable].[supply_chain_id] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DimDate\Remove pre-existing dates">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\DimDepartment">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="157,42"
-          Id="Package\DimDepartment\OLE DB Source"
-          TopLeft="247,36" />
-        <NodeLayout
-          Size="167,42"
-          Id="Package\DimDepartment\Derived Column 1"
-          TopLeft="373,274" />
+          Size="255,44"
+          Id="Package\DimDepartment\Determine if type 2 column changed"
+          TopLeft="328,196" />
         <NodeLayout
           Size="206,42"
           Id="Package\DimDepartment\Determine new or existing"
           TopLeft="225,110" />
         <NodeLayout
-          Size="186,42"
-          Id="Package\DimDepartment\Update type 2 column"
-          TopLeft="370,367" />
+          Size="157,42"
+          Id="Package\DimDepartment\OLE DB Source"
+          TopLeft="247,36" />
         <NodeLayout
           Size="177,42"
           Id="Package\DimDepartment\OLE DB Destination"
           TopLeft="90,376" />
         <NodeLayout
           Size="186,42"
+          Id="Package\DimDepartment\Update type 2 column"
+          TopLeft="370,367" />
+        <NodeLayout
+          Size="186,42"
           Id="Package\DimDepartment\OLE DB Destination 1"
           TopLeft="363,457" />
-        <NodeLayout
-          Size="255,44"
-          Id="Package\DimDepartment\Determine if type 2 column changed"
-          TopLeft="328,196" />
         <NodeLayout
           Size="158,42"
           Id="Package\DimDepartment\Derived Column"
           TopLeft="103,277" />
+        <NodeLayout
+          Size="167,42"
+          Id="Package\DimDepartment\Derived Column 1"
+          TopLeft="373,274" />
         <EdgeLayout
           Id="Package\DimDepartment.Paths[versioned change]"
           TopLeft="456,240">
@@ -12090,20 +12090,12 @@ where [refTable].[supply_chain_id] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DimDepartment\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\DimDepartment\Determine new or existing">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -12113,8 +12105,16 @@ where [refTable].[supply_chain_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DimDepartment\OLE DB Source">
+    <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
@@ -12152,25 +12152,25 @@ where [refTable].[supply_chain_id] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="191,42"
-          Id="Package\DimEmployee\Update type 1 columns"
-          TopLeft="455,433" />
-        <NodeLayout
-          Size="206,42"
-          Id="Package\DimEmployee\Determine new or existing"
-          TopLeft="231,226" />
-        <NodeLayout
           Size="177,42"
           Id="Package\DimEmployee\OLE DB Destination"
           TopLeft="69,331" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\DimEmployee\OLE DB Source"
+          TopLeft="257,20" />
+        <NodeLayout
+          Size="191,42"
+          Id="Package\DimEmployee\Update type 1 columns"
+          TopLeft="455,433" />
         <NodeLayout
           Size="225,42"
           Id="Package\DimEmployee\Get department surrogate key"
           TopLeft="219,94" />
         <NodeLayout
-          Size="157,42"
-          Id="Package\DimEmployee\OLE DB Source"
-          TopLeft="257,20" />
+          Size="206,42"
+          Id="Package\DimEmployee\Determine new or existing"
+          TopLeft="231,226" />
         <NodeLayout
           Size="260,42"
           Id="Package\DimEmployee\Determine if type 1 columns changed"
@@ -12321,29 +12321,6 @@ where [refTable].[supply_chain_id] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DimEmployee\Determine new or existing">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\DimEmployee\OLE DB Destination">
     <Properties>
       <Property>
@@ -12357,12 +12334,20 @@ where [refTable].[supply_chain_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\DimEmployee\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\DimEmployee\Get department surrogate key">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -12372,7 +12357,7 @@ where [refTable].[supply_chain_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12380,8 +12365,23 @@ where [refTable].[supply_chain_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DimEmployee\OLE DB Source">
+    design-time-name="Package\DimEmployee\Determine new or existing">
     <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
@@ -12584,7 +12584,7 @@ where [refTable].[supply_chain_id] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -12594,7 +12594,7 @@ where [refTable].[supply_chain_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12607,14 +12607,6 @@ where [refTable].[supply_chain_id] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="221,42"
-          Id="Package\DimSupplier\Update type 1 and 2 columns"
-          TopLeft="303,440" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\DimSupplier\Update type 1 column"
-          TopLeft="544,349" />
-        <NodeLayout
           Size="177,42"
           Id="Package\DimSupplier\OLE DB Destination"
           TopLeft="86,395" />
@@ -12623,9 +12615,25 @@ where [refTable].[supply_chain_id] = ?</property>
           Id="Package\DimSupplier\Determine new or existing"
           TopLeft="205,145" />
         <NodeLayout
+          Size="186,42"
+          Id="Package\DimSupplier\OLE DB Destination 1"
+          TopLeft="319,546" />
+        <NodeLayout
+          Size="352,42"
+          Id="Package\DimSupplier\Determine whether type 1 column changed only or more"
+          TopLeft="340,252" />
+        <NodeLayout
+          Size="221,42"
+          Id="Package\DimSupplier\Update type 1 and 2 columns"
+          TopLeft="303,440" />
+        <NodeLayout
           Size="157,42"
           Id="Package\DimSupplier\OLE DB Source"
           TopLeft="231,42" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\DimSupplier\Update type 1 column"
+          TopLeft="544,349" />
         <NodeLayout
           Size="158,42"
           Id="Package\DimSupplier\Derived Column"
@@ -12634,14 +12642,6 @@ where [refTable].[supply_chain_id] = ?</property>
           Size="167,42"
           Id="Package\DimSupplier\Derived Column 1"
           TopLeft="332,352" />
-        <NodeLayout
-          Size="352,42"
-          Id="Package\DimSupplier\Determine whether type 1 column changed only or more"
-          TopLeft="340,252" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\DimSupplier\OLE DB Destination 1"
-          TopLeft="319,546" />
         <EdgeLayout
           Id="Package\DimSupplier.Paths[versioned change]"
           TopLeft="458.666666666667,294">
@@ -12896,7 +12896,7 @@ where [refTable].[supply_chain_id] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -12906,16 +12906,8 @@ where [refTable].[supply_chain_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DimSupplier\OLE DB Source">
-    <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
@@ -12934,51 +12926,59 @@ where [refTable].[supply_chain_id] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DimSupplier\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\FactProjectHR">
     <LayoutInfo>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="123,42"
-          Id="Package\FactProjectHR\Union All"
-          TopLeft="245.222222222222,400.888888888889" />
-        <NodeLayout
           Size="158,42"
           Id="Package\FactProjectHR\Derived Column"
           TopLeft="67,286" />
         <NodeLayout
-          Size="227,42"
-          Id="Package\FactProjectHR\Get surrogate key of start date"
-          TopLeft="184.111111111111,102.222222222222" />
-        <NodeLayout
-          Size="225,42"
-          Id="Package\FactProjectHR\Get department surrogate key"
-          TopLeft="198.222222222222,487.888888888889" />
+          Size="155,42"
+          Id="Package\FactProjectHR\Update existing"
+          TopLeft="69,759" />
         <NodeLayout
           Size="214,42"
           Id="Package\FactProjectHR\Determine if new or existing"
           TopLeft="209.777777777778,655.111111111111" />
         <NodeLayout
-          Size="177,42"
-          Id="Package\FactProjectHR\OLE DB Destination"
-          TopLeft="358,759" />
+          Size="217,42"
+          Id="Package\FactProjectHR\Get employee surrogate key"
+          TopLeft="209.555555555556,579.111111111111" />
+        <NodeLayout
+          Size="227,42"
+          Id="Package\FactProjectHR\Get surrogate key of start date"
+          TopLeft="184.111111111111,102.222222222222" />
+        <NodeLayout
+          Size="123,42"
+          Id="Package\FactProjectHR\Union All"
+          TopLeft="245.222222222222,400.888888888889" />
         <NodeLayout
           Size="157,42"
           Id="Package\FactProjectHR\OLE DB Source"
           TopLeft="220,30" />
         <NodeLayout
+          Size="225,42"
+          Id="Package\FactProjectHR\Get department surrogate key"
+          TopLeft="198.222222222222,487.888888888889" />
+        <NodeLayout
           Size="224,42"
           Id="Package\FactProjectHR\Get surrogate key of end date"
           TopLeft="181.222222222222,188.222222222222" />
         <NodeLayout
-          Size="217,42"
-          Id="Package\FactProjectHR\Get employee surrogate key"
-          TopLeft="209.555555555556,579.111111111111" />
-        <NodeLayout
-          Size="155,42"
-          Id="Package\FactProjectHR\Update existing"
-          TopLeft="69,759" />
+          Size="177,42"
+          Id="Package\FactProjectHR\OLE DB Destination"
+          TopLeft="358,759" />
         <EdgeLayout
           Id="Package\FactProjectHR.Paths[Union All Output 1]"
           TopLeft="308.722222222222,442.888888888889">
@@ -13029,33 +13029,33 @@ where [refTable].[supply_chain_id] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="95.3888888888889,61.8888888888888"
+              EndConnector="95.3888888888887,61.888888888889"
               Start="0,0"
-              End="95.3888888888889,54.3888888888888">
+              End="95.3888888888887,54.388888888889">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.0311276025561" />
+                    End="0,21.0311276025562" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21.0311276025561"
-                    Point2="0,25.0311276025561"
-                    Point3="4,25.0311276025561" />
+                    Point1="0,21.0311276025562"
+                    Point2="0,25.0311276025562"
+                    Point3="4,25.0311276025562" />
                   <mssgle:LineSegment
-                    End="91.3888888888889,25.0311276025561" />
+                    End="91.3888888888887,25.0311276025562" />
                   <mssgle:CubicBezierSegment
-                    Point1="91.3888888888889,25.0311276025561"
-                    Point2="95.3888888888889,25.0311276025561"
-                    Point3="95.3888888888889,29.0311276025561" />
+                    Point1="91.3888888888887,25.0311276025562"
+                    Point2="95.3888888888887,25.0311276025562"
+                    Point3="95.3888888888887,29.0311276025562" />
                   <mssgle:LineSegment
-                    End="95.3888888888889,54.3888888888888" />
+                    End="95.3888888888887,54.388888888889" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-8.11194227430554,30.0311276025561,111.6127734375,11.609375"
+              BoundingBox="-8.11194227430565,30.0311276025562,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -13097,37 +13097,37 @@ where [refTable].[supply_chain_id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\FactProjectHR.Paths[Lookup Match Output4]"
-          TopLeft="282.444444444444,697.111111111111">
+          TopLeft="282.444444444445,697.111111111111">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-135.944444444444,61.8888888888888"
+              EndConnector="-135.944444444445,61.888888888889"
               Start="0,0"
-              End="-135.944444444444,54.3888888888888">
+              End="-135.944444444445,54.388888888889">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.0311276025561" />
+                    End="0,21.0311276025562" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21.0311276025561"
-                    Point2="0,25.0311276025561"
-                    Point3="-4,25.0311276025561" />
+                    Point1="0,21.0311276025562"
+                    Point2="0,25.0311276025562"
+                    Point3="-4,25.0311276025562" />
                   <mssgle:LineSegment
-                    End="-131.944444444444,25.0311276025561" />
+                    End="-131.944444444445,25.0311276025562" />
                   <mssgle:CubicBezierSegment
-                    Point1="-131.944444444444,25.0311276025561"
-                    Point2="-135.944444444444,25.0311276025561"
-                    Point3="-135.944444444444,29.0311276025561" />
+                    Point1="-131.944444444445,25.0311276025562"
+                    Point2="-135.944444444445,25.0311276025562"
+                    Point3="-135.944444444445,29.0311276025562" />
                   <mssgle:LineSegment
-                    End="-135.944444444444,54.3888888888888" />
+                    End="-135.944444444445,54.388888888889" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-116.163608940972,30.0311276025561,96.3827734375,11.609375"
+              BoundingBox="-116.163608940972,30.0311276025562,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -13137,21 +13137,21 @@ where [refTable].[supply_chain_id] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,34.0000000000001"
+              EndConnector="0,34"
               Start="0,0"
-              End="0,26.5000000000001">
+              End="0,26.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.5000000000001" />
+                    End="0,26.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,7.44531250000006,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,7.4453125,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -13265,12 +13265,12 @@ where [refTable].[supply_chain_id] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\FactProjectHR\Get surrogate key of start date">
+    design-time-name="Package\FactProjectHR\Determine if new or existing">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -13280,8 +13280,62 @@ where [refTable].[supply_chain_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\FactProjectHR\Get employee surrogate key">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\FactProjectHR\Get surrogate key of start date">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\FactProjectHR\OLE DB Source">
+    <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
@@ -13293,7 +13347,7 @@ where [refTable].[supply_chain_id] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -13303,7 +13357,7 @@ where [refTable].[supply_chain_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -13311,12 +13365,12 @@ where [refTable].[supply_chain_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\FactProjectHR\Determine if new or existing">
+    design-time-name="Package\FactProjectHR\Get surrogate key of end date">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -13326,7 +13380,7 @@ where [refTable].[supply_chain_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -13346,69 +13400,19 @@ where [refTable].[supply_chain_id] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\FactProjectHR\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\FactProjectHR\Get surrogate key of end date">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\FactProjectHR\Get employee surrogate key">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\FactSales">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="206,42"
-          Id="Package\FactSales\Get product surrogate key"
-          TopLeft="254,328" />
+          Size="186,42"
+          Id="Package\FactSales\Remove existing rows"
+          TopLeft="262,136" />
+        <NodeLayout
+          Size="190,42"
+          Id="Package\FactSales\Get date surrogate key"
+          TopLeft="258,239" />
         <NodeLayout
           Size="177,42"
           Id="Package\FactSales\OLE DB Destination"
@@ -13418,17 +13422,13 @@ where [refTable].[supply_chain_id] = ?</property>
           Id="Package\FactSales\OLE DB Source"
           TopLeft="273,42" />
         <NodeLayout
-          Size="190,42"
-          Id="Package\FactSales\Get date surrogate key"
-          TopLeft="258,239" />
-        <NodeLayout
           Size="214,42"
           Id="Package\FactSales\Get customer surrogate key"
           TopLeft="253,422" />
         <NodeLayout
-          Size="186,42"
-          Id="Package\FactSales\Remove existing rows"
-          TopLeft="262,136" />
+          Size="206,42"
+          Id="Package\FactSales\Get product surrogate key"
+          TopLeft="254,328" />
         <EdgeLayout
           Id="Package\FactSales.Paths[OLE DB Source Output]"
           TopLeft="353.25,84">
@@ -13551,12 +13551,12 @@ where [refTable].[supply_chain_id] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\FactSales\Get product surrogate key">
+    design-time-name="Package\FactSales\Remove existing rows">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -13566,7 +13566,30 @@ where [refTable].[supply_chain_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\FactSales\Get date surrogate key">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -13595,35 +13618,12 @@ where [refTable].[supply_chain_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\FactSales\Get date surrogate key">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\FactSales\Get customer surrogate key">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -13633,7 +13633,7 @@ where [refTable].[supply_chain_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -13641,12 +13641,12 @@ where [refTable].[supply_chain_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\FactSales\Remove existing rows">
+    design-time-name="Package\FactSales\Get product surrogate key">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -13656,7 +13656,7 @@ where [refTable].[supply_chain_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -13669,9 +13669,13 @@ where [refTable].[supply_chain_id] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="208,42"
-          Id="Package\FactSupplyChain\Get supplier surrogate key"
-          TopLeft="258,283" />
+          Size="186,42"
+          Id="Package\FactSupplyChain\Remove existing rows"
+          TopLeft="268,106" />
+        <NodeLayout
+          Size="206,42"
+          Id="Package\FactSupplyChain\Get product surrogate key"
+          TopLeft="263,371" />
         <NodeLayout
           Size="177,42"
           Id="Package\FactSupplyChain\OLE DB Destination"
@@ -13685,13 +13689,9 @@ where [refTable].[supply_chain_id] = ?</property>
           Id="Package\FactSupplyChain\Get date surrogate key"
           TopLeft="272,192" />
         <NodeLayout
-          Size="206,42"
-          Id="Package\FactSupplyChain\Get product surrogate key"
-          TopLeft="263,371" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\FactSupplyChain\Remove existing rows"
-          TopLeft="268,106" />
+          Size="208,42"
+          Id="Package\FactSupplyChain\Get supplier surrogate key"
+          TopLeft="258,283" />
         <EdgeLayout
           Id="Package\FactSupplyChain.Paths[OLE DB Source Output]"
           TopLeft="357.75,71">
@@ -13814,12 +13814,12 @@ where [refTable].[supply_chain_id] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\FactSupplyChain\Get supplier surrogate key">
+    design-time-name="Package\FactSupplyChain\Remove existing rows">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -13829,7 +13829,30 @@ where [refTable].[supply_chain_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\FactSupplyChain\Get product surrogate key">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -13863,7 +13886,7 @@ where [refTable].[supply_chain_id] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -13873,7 +13896,7 @@ where [refTable].[supply_chain_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -13881,12 +13904,12 @@ where [refTable].[supply_chain_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\FactSupplyChain\Get product surrogate key">
+    design-time-name="Package\FactSupplyChain\Get supplier surrogate key">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -13896,30 +13919,7 @@ where [refTable].[supply_chain_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\FactSupplyChain\Remove existing rows">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>

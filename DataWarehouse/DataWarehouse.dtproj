@@ -26,19 +26,19 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-FIRT0B1</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA5ttNsf17ckKnYvfl9QFTGwAAAAACAAAAAAAQZgAAAAEAACAAAAArUSFfmFNS5b2GdlUL9DQ5+bFmOeTdIuHGMmtTQ1lO+gAAAAAOgAAAAAIAACAAAACYGoHhozkKSQdZITX4RJS7sJpyt/uuNyZfvopH+SL2q5AAAADngIZThJZbuqyhXd/R+UQ+i5uTPWG8pdRZtxKF84zBbh7re7dWSrgraeq21oGxvpJZM+ukCRV+x9ZlWSRXHC5MOs9o31lxNTmVmpnb4AuUpVkeoMNCwaEav3GUcfkbNPuTqGx4KYk1bQID4nSMYIW8MFTzr3SdSc+LVOxFjPwMBVuOe6FfQv9w06Vl8VkYC/RAAAAAHFF9//Msy7J7QsI/OFfsCygivq+gqFd4UhUTPywR3tulZ05nJCWmiF7rxOKw3Ev2xQCw+0EGZZWvAWDzVLCbKA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA5ttNsf17ckKnYvfl9QFTGwAAAAACAAAAAAAQZgAAAAEAACAAAAAhUnkzlPPdIrh4+zr9uqUBuTPMEf0YuM7nUcenf23muQAAAAAOgAAAAAIAACAAAACqZxdgDUIA2/JcKg2GGeEgccc6lAPskULqR6k9MbcCNZAAAAA5a7BSi2sen39QssQLeh+wpx4V1ZnIle7zhJbNpb2djMk17kpZhr8akbvtDtu8wz0b8U1b6ZszpYTkuf8ejLAggurBl3HJShm9Teq0QC+11Gpf9Fedh1LMAWsIwOTzzjm9Wu0kuzDUqhi+fYWZeX1d6WXgqW1GiLe1Fu/h8HCq/r7GzfKKCs8AJ1NuktZY82FAAAAA+FSYFZGd4ZEE0UOt+mA16XyGeaYGbLAie+6ONNRqftc0C00H5ZMhx1CvI8fGiefj9pHQHJOE1ht+dDAQzRQcaQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="Package.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
-          <SSIS:ConnectionManager SSIS:Name="(localdb)_MSSQLLocalDB.Staging.conmgr" />
-          <SSIS:ConnectionManager SSIS:Name="(localdb)_MSSQLLocalDB.DataWarehouse.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="localhost.Staging.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="localhost.DataWarehouse.conmgr" />
         </SSIS:ConnectionManagers>
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.Staging.ConnectByProxy">
+            <SSIS:Parameter SSIS:Name="CM.localhost.Staging.ConnectByProxy">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -53,7 +53,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.Staging.ConnectionString">
+            <SSIS:Parameter SSIS:Name="CM.localhost.Staging.ConnectionString">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -64,11 +64,11 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Staging;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-DataWarehouse-{6743F638-1C1F-4585-89F9-89B7E0E8E827}(localdb)\MSSQLLocalDB.Staging;Auto Translate=False;</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=localhost;Initial Catalog=Staging;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-DataWarehouse-{557EC769-B79B-43C7-9B01-05CD823DFA44}localhost.Staging;Auto Translate=False;</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.Staging.ConnectRetryCount">
+            <SSIS:Parameter SSIS:Name="CM.localhost.Staging.ConnectRetryCount">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -83,7 +83,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.Staging.ConnectRetryInterval">
+            <SSIS:Parameter SSIS:Name="CM.localhost.Staging.ConnectRetryInterval">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -98,7 +98,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.Staging.ConnectUsingManagedIdentity">
+            <SSIS:Parameter SSIS:Name="CM.localhost.Staging.ConnectUsingManagedIdentity">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -113,7 +113,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.Staging.InitialCatalog">
+            <SSIS:Parameter SSIS:Name="CM.localhost.Staging.InitialCatalog">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -128,7 +128,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.Staging.Password">
+            <SSIS:Parameter SSIS:Name="CM.localhost.Staging.Password">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -142,7 +142,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.Staging.RetainSameConnection">
+            <SSIS:Parameter SSIS:Name="CM.localhost.Staging.RetainSameConnection">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -157,7 +157,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.Staging.ServerName">
+            <SSIS:Parameter SSIS:Name="CM.localhost.Staging.ServerName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -168,11 +168,11 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">(localdb)\MSSQLLocalDB</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">localhost</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.Staging.UserName">
+            <SSIS:Parameter SSIS:Name="CM.localhost.Staging.UserName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -186,7 +186,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.DataWarehouse.ConnectByProxy">
+            <SSIS:Parameter SSIS:Name="CM.localhost.DataWarehouse.ConnectByProxy">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -201,7 +201,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.DataWarehouse.ConnectionString">
+            <SSIS:Parameter SSIS:Name="CM.localhost.DataWarehouse.ConnectionString">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -212,11 +212,11 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DataWarehouse;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-DataWarehouse-{482B73B7-0D51-4F2F-B8C1-BB0B83C64178}(localdb)\MSSQLLocalDB.DataWarehouse;Auto Translate=False;</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=localhost;Initial Catalog=DataWarehouse;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-DataWarehouse-{1329AD24-8260-4CCE-98A8-88D7FFCB1A23}localhost.DataWarehouse;Auto Translate=False;</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.DataWarehouse.ConnectRetryCount">
+            <SSIS:Parameter SSIS:Name="CM.localhost.DataWarehouse.ConnectRetryCount">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -231,7 +231,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.DataWarehouse.ConnectRetryInterval">
+            <SSIS:Parameter SSIS:Name="CM.localhost.DataWarehouse.ConnectRetryInterval">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -246,7 +246,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.DataWarehouse.ConnectUsingManagedIdentity">
+            <SSIS:Parameter SSIS:Name="CM.localhost.DataWarehouse.ConnectUsingManagedIdentity">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -261,7 +261,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.DataWarehouse.InitialCatalog">
+            <SSIS:Parameter SSIS:Name="CM.localhost.DataWarehouse.InitialCatalog">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -276,7 +276,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.DataWarehouse.Password">
+            <SSIS:Parameter SSIS:Name="CM.localhost.DataWarehouse.Password">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -290,7 +290,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.DataWarehouse.RetainSameConnection">
+            <SSIS:Parameter SSIS:Name="CM.localhost.DataWarehouse.RetainSameConnection">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -305,7 +305,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.DataWarehouse.ServerName">
+            <SSIS:Parameter SSIS:Name="CM.localhost.DataWarehouse.ServerName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -316,11 +316,11 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">(localdb)\MSSQLLocalDB</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">localhost</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.(localdb)_MSSQLLocalDB.DataWarehouse.UserName">
+            <SSIS:Parameter SSIS:Name="CM.localhost.DataWarehouse.UserName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -342,10 +342,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">27</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">37</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{0CEE8744-E98A-4153-80C3-D8AE10B7AB45}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{CEF2F5B5-4818-4CC8-9EBC-447BE94B74FF}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>

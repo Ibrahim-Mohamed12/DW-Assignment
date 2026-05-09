@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost.NvidiaDatabase"
+  DTS:DTSID="{1DA8B39E-4018-4774-8333-A443B6F8F797}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=localhost;Initial Catalog=NvidiaDatabase;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Staging-{1DA8B39E-4018-4774-8333-A443B6F8F797}localhost.NvidiaDatabase;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

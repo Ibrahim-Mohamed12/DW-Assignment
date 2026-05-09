@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="17"
-  DTS:VersionGUID="{BB4EB7C4-008E-46D6-AE1C-E94CB79DC902}">
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{8F719CEC-E07B-4061-957F-47E0C1C9237A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -90,8 +90,8 @@
               <connections>
                 <connection
                   refId="Package\customers\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{6CAD82CC-0764-4F66-8609-7F5FB555EB2F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.Staging]"
+                  connectionManagerID="{C165EF9B-AF40-4757-A1BD-960D533749E3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.Staging]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -251,8 +251,8 @@
               <connections>
                 <connection
                   refId="Package\customers\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{018430CA-69DE-4841-B87A-718EB847008E}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.NvidiaDatabase]"
+                  connectionManagerID="{1DA8B39E-4018-4774-8333-A443B6F8F797}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.NvidiaDatabase]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -642,8 +642,8 @@
               <connections>
                 <connection
                   refId="Package\departments\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{05DBC31D-C9E5-4690-8432-C59B04799C14}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.dbhouse]"
+                  connectionManagerID="{C165EF9B-AF40-4757-A1BD-960D533749E3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.Staging]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -775,8 +775,8 @@
               <connections>
                 <connection
                   refId="Package\departments\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{018430CA-69DE-4841-B87A-718EB847008E}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.NvidiaDatabase]"
+                  connectionManagerID="{1DA8B39E-4018-4774-8333-A443B6F8F797}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.NvidiaDatabase]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1157,8 +1157,8 @@
               <connections>
                 <connection
                   refId="Package\employees\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{6CAD82CC-0764-4F66-8609-7F5FB555EB2F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.Staging]"
+                  connectionManagerID="{C165EF9B-AF40-4757-A1BD-960D533749E3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.Staging]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1324,8 +1324,8 @@
               <connections>
                 <connection
                   refId="Package\employees\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{018430CA-69DE-4841-B87A-718EB847008E}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.NvidiaDatabase]"
+                  connectionManagerID="{1DA8B39E-4018-4774-8333-A443B6F8F797}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.NvidiaDatabase]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1771,8 +1771,8 @@
               <connections>
                 <connection
                   refId="Package\products\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{6CAD82CC-0764-4F66-8609-7F5FB555EB2F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.Staging]"
+                  connectionManagerID="{C165EF9B-AF40-4757-A1BD-960D533749E3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.Staging]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1928,8 +1928,8 @@
               <connections>
                 <connection
                   refId="Package\products\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{018430CA-69DE-4841-B87A-718EB847008E}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.NvidiaDatabase]"
+                  connectionManagerID="{1DA8B39E-4018-4774-8333-A443B6F8F797}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.NvidiaDatabase]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2362,8 +2362,8 @@
               <connections>
                 <connection
                   refId="Package\projects\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{6CAD82CC-0764-4F66-8609-7F5FB555EB2F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.Staging]"
+                  connectionManagerID="{C165EF9B-AF40-4757-A1BD-960D533749E3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.Staging]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2525,8 +2525,8 @@
               <connections>
                 <connection
                   refId="Package\projects\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{018430CA-69DE-4841-B87A-718EB847008E}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.NvidiaDatabase]"
+                  connectionManagerID="{1DA8B39E-4018-4774-8333-A443B6F8F797}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.NvidiaDatabase]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2941,8 +2941,8 @@
               <connections>
                 <connection
                   refId="Package\sales\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{6CAD82CC-0764-4F66-8609-7F5FB555EB2F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.Staging]"
+                  connectionManagerID="{C165EF9B-AF40-4757-A1BD-960D533749E3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.Staging]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3114,8 +3114,8 @@
               <connections>
                 <connection
                   refId="Package\sales\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{018430CA-69DE-4841-B87A-718EB847008E}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.NvidiaDatabase]"
+                  connectionManagerID="{1DA8B39E-4018-4774-8333-A443B6F8F797}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.NvidiaDatabase]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3459,8 +3459,8 @@
               <connections>
                 <connection
                   refId="Package\suppliers\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{6CAD82CC-0764-4F66-8609-7F5FB555EB2F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.Staging]"
+                  connectionManagerID="{C165EF9B-AF40-4757-A1BD-960D533749E3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.Staging]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3606,8 +3606,8 @@
               <connections>
                 <connection
                   refId="Package\suppliers\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{018430CA-69DE-4841-B87A-718EB847008E}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.NvidiaDatabase]"
+                  connectionManagerID="{1DA8B39E-4018-4774-8333-A443B6F8F797}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.NvidiaDatabase]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4037,8 +4037,8 @@
               <connections>
                 <connection
                   refId="Package\supply chain\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{6CAD82CC-0764-4F66-8609-7F5FB555EB2F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.Staging]"
+                  connectionManagerID="{C165EF9B-AF40-4757-A1BD-960D533749E3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.Staging]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4182,8 +4182,8 @@
               <connections>
                 <connection
                   refId="Package\supply chain\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{018430CA-69DE-4841-B87A-718EB847008E}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[(localdb)_MSSQLLocalDB.NvidiaDatabase]"
+                  connectionManagerID="{1DA8B39E-4018-4774-8333-A443B6F8F797}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.NvidiaDatabase]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4334,11 +4334,11 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate customers"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{6CAD82CC-0764-4F66-8609-7F5FB555EB2F}"
+          SQLTask:Connection="{C165EF9B-AF40-4757-A1BD-960D533749E3}"
           SQLTask:SqlStatementSource="Truncate TABLE customers;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -4351,11 +4351,11 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate departments"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{6CAD82CC-0764-4F66-8609-7F5FB555EB2F}"
+          SQLTask:Connection="{C165EF9B-AF40-4757-A1BD-960D533749E3}"
           SQLTask:SqlStatementSource="truncate table departments;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -4372,7 +4372,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{6CAD82CC-0764-4F66-8609-7F5FB555EB2F}"
+          SQLTask:Connection="{C165EF9B-AF40-4757-A1BD-960D533749E3}"
           SQLTask:SqlStatementSource="truncate table employees;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -4385,11 +4385,11 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="truncate products"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="5">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{6CAD82CC-0764-4F66-8609-7F5FB555EB2F}"
+          SQLTask:Connection="{C165EF9B-AF40-4757-A1BD-960D533749E3}"
           SQLTask:SqlStatementSource="truncate table products;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -4406,7 +4406,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{6CAD82CC-0764-4F66-8609-7F5FB555EB2F}"
+          SQLTask:Connection="{C165EF9B-AF40-4757-A1BD-960D533749E3}"
           SQLTask:SqlStatementSource="truncate table projects;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -4419,11 +4419,11 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="truncate sales"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{6CAD82CC-0764-4F66-8609-7F5FB555EB2F}"
+          SQLTask:Connection="{C165EF9B-AF40-4757-A1BD-960D533749E3}"
           SQLTask:SqlStatementSource="truncate table sales;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -4440,7 +4440,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{6CAD82CC-0764-4F66-8609-7F5FB555EB2F}"
+          SQLTask:Connection="{C165EF9B-AF40-4757-A1BD-960D533749E3}"
           SQLTask:SqlStatementSource="truncate table suppliers;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -4457,7 +4457,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{6CAD82CC-0764-4F66-8609-7F5FB555EB2F}"
+          SQLTask:Connection="{C165EF9B-AF40-4757-A1BD-960D533749E3}"
           SQLTask:SqlStatementSource="truncate table supply_chain" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -4553,38 +4553,6 @@
           Id="Package\employees"
           TopLeft="413,133" />
         <NodeLayout
-          Size="176,42"
-          Id="Package\Truncate customers"
-          TopLeft="0,29" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\Truncate departments"
-          TopLeft="189,30" />
-        <NodeLayout
-          Size="175,42"
-          Id="Package\truncate employees"
-          TopLeft="390,33" />
-        <NodeLayout
-          Size="164,42"
-          Id="Package\truncate products"
-          TopLeft="591,32" />
-        <NodeLayout
-          Size="147,42"
-          Id="Package\truncate sales"
-          TopLeft="1000,32" />
-        <NodeLayout
-          Size="160,42"
-          Id="Package\truncate projects"
-          TopLeft="786,29" />
-        <NodeLayout
-          Size="166,42"
-          Id="Package\truncate suppliers"
-          TopLeft="1201,35" />
-        <NodeLayout
-          Size="183,42"
-          Id="Package\truncate supply chain"
-          TopLeft="1402,35" />
-        <NodeLayout
           Size="121,42"
           Id="Package\products"
           TopLeft="614,137" />
@@ -4604,6 +4572,38 @@
           Size="140,42"
           Id="Package\supply chain"
           TopLeft="1427,150" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Truncate customers"
+          TopLeft="0,29" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Truncate departments"
+          TopLeft="189,30" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\truncate employees"
+          TopLeft="390,33" />
+        <NodeLayout
+          Size="164,42"
+          Id="Package\truncate products"
+          TopLeft="591,32" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\truncate projects"
+          TopLeft="786,29" />
+        <NodeLayout
+          Size="147,42"
+          Id="Package\truncate sales"
+          TopLeft="1000,32" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\truncate suppliers"
+          TopLeft="1201,35" />
+        <NodeLayout
+          Size="183,42"
+          Id="Package\truncate supply chain"
+          TopLeft="1402,35" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="89.5,71">
@@ -4825,6 +4825,10 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="261,42"
+          Id="Package\customers\Trim string columns and replace nulls"
+          TopLeft="305,167" />
+        <NodeLayout
           Size="177,42"
           Id="Package\customers\OLE DB Destination"
           TopLeft="344,281" />
@@ -4832,10 +4836,6 @@
           Size="157,42"
           Id="Package\customers\OLE DB Source"
           TopLeft="352,42" />
-        <NodeLayout
-          Size="261,42"
-          Id="Package\customers\Trim string columns and replace nulls"
-          TopLeft="305,167" />
         <EdgeLayout
           Id="Package\customers.Paths[OLE DB Source Output]"
           TopLeft="433,84">
@@ -4915,10 +4915,6 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="261,42"
-          Id="Package\departments\Trim string columns and replace nulls"
-          TopLeft="365,144" />
-        <NodeLayout
           Size="157,42"
           Id="Package\departments\OLE DB Source"
           TopLeft="415,38" />
@@ -4926,6 +4922,10 @@
           Size="177,42"
           Id="Package\departments\OLE DB Destination"
           TopLeft="410,257" />
+        <NodeLayout
+          Size="261,42"
+          Id="Package\departments\Trim string columns and replace nulls"
+          TopLeft="365,144" />
         <EdgeLayout
           Id="Package\departments.Paths[OLE DB Source Output]"
           TopLeft="494.5,80">
@@ -5005,6 +5005,14 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="261,42"
+          Id="Package\employees\Trim string columns and replace nulls"
+          TopLeft="365,169" />
+        <NodeLayout
+          Size="279,42"
+          Id="Package\employees\Drop rows where hire date is in the future"
+          TopLeft="361,275" />
+        <NodeLayout
           Size="157,42"
           Id="Package\employees\OLE DB Source"
           TopLeft="415,53" />
@@ -5012,14 +5020,6 @@
           Size="177,42"
           Id="Package\employees\OLE DB Destination"
           TopLeft="413,423" />
-        <NodeLayout
-          Size="279,42"
-          Id="Package\employees\Drop rows where hire date is in the future"
-          TopLeft="361,275" />
-        <NodeLayout
-          Size="261,42"
-          Id="Package\employees\Trim string columns and replace nulls"
-          TopLeft="365,169" />
         <EdgeLayout
           Id="Package\employees.Paths[OLE DB Source Output]"
           TopLeft="494.5,95">
@@ -5123,10 +5123,6 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="177,42"
-          Id="Package\products\OLE DB Destination"
-          TopLeft="350,378" />
-        <NodeLayout
           Size="157,42"
           Id="Package\products\OLE DB Source"
           TopLeft="369,83" />
@@ -5138,6 +5134,10 @@
           Size="261,42"
           Id="Package\products\Trim string columns and replace nulls"
           TopLeft="311,172" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\products\OLE DB Destination"
+          TopLeft="350,378" />
         <EdgeLayout
           Id="Package\products.Paths[Case 1]"
           TopLeft="436.5,304">
@@ -5210,7 +5210,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\products\OLE DB Destination">
+    design-time-name="Package\products\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5223,7 +5223,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\products\OLE DB Source">
+    design-time-name="Package\products\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5241,21 +5241,21 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="157,42"
-          Id="Package\projects\OLE DB Source"
-          TopLeft="420,38" />
-        <NodeLayout
-          Size="177,42"
-          Id="Package\projects\OLE DB Destination"
-          TopLeft="404,352" />
+          Size="261,42"
+          Id="Package\projects\Trim string columns and replace nulls"
+          TopLeft="367,130" />
         <NodeLayout
           Size="526,42"
           Id="Package\projects\Drop rows where start and end date are in the future and where start date is before end date"
           TopLeft="233,237" />
         <NodeLayout
-          Size="261,42"
-          Id="Package\projects\Trim string columns and replace nulls"
-          TopLeft="367,130" />
+          Size="177,42"
+          Id="Package\projects\OLE DB Destination"
+          TopLeft="404,352" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\projects\OLE DB Source"
+          TopLeft="420,38" />
         <EdgeLayout
           Id="Package\projects.Paths[OLE DB Source Output]"
           TopLeft="498,80">
@@ -5328,7 +5328,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\projects\OLE DB Source">
+    design-time-name="Package\projects\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5341,7 +5341,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\projects\OLE DB Destination">
+    design-time-name="Package\projects\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5359,21 +5359,21 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="290,42"
+          Id="Package\sales\Trim string columns and replace null values"
+          TopLeft="328,130" />
+        <NodeLayout
           Size="157,42"
           Id="Package\sales\OLE DB Source"
           TopLeft="392,32" />
-        <NodeLayout
-          Size="177,42"
-          Id="Package\sales\OLE DB Destination"
-          TopLeft="376,327" />
         <NodeLayout
           Size="281,42"
           Id="Package\sales\Drop rows where sale date is in the future"
           TopLeft="330,231" />
         <NodeLayout
-          Size="290,42"
-          Id="Package\sales\Trim string columns and replace null values"
-          TopLeft="328,130" />
+          Size="177,42"
+          Id="Package\sales\OLE DB Destination"
+          TopLeft="376,327" />
         <EdgeLayout
           Id="Package\sales.Paths[Case 1]"
           TopLeft="467.5,273">
@@ -5477,17 +5477,17 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="177,42"
-          Id="Package\suppliers\OLE DB Destination"
-          TopLeft="414,288" />
+          Size="157,42"
+          Id="Package\suppliers\OLE DB Source"
+          TopLeft="422,37" />
         <NodeLayout
           Size="261,42"
           Id="Package\suppliers\Trim string columns and replace nulls"
           TopLeft="368,162" />
         <NodeLayout
-          Size="157,42"
-          Id="Package\suppliers\OLE DB Source"
-          TopLeft="422,37" />
+          Size="177,42"
+          Id="Package\suppliers\OLE DB Destination"
+          TopLeft="414,288" />
         <EdgeLayout
           Id="Package\suppliers.Paths[Derived Column Output]"
           TopLeft="500.5,204">
@@ -5536,7 +5536,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\suppliers\OLE DB Destination">
+    design-time-name="Package\suppliers\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5549,7 +5549,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\suppliers\OLE DB Source">
+    design-time-name="Package\suppliers\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
